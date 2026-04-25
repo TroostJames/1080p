@@ -360,6 +360,7 @@
       <div class="alert-toggle" data-countbar="tornado"><span class="toggle-icon">ON</span><span>Tornado Warnings</span></div>
       <div class="alert-toggle" data-countbar="severe-thunderstorm"><span class="toggle-icon">ON</span><span>Severe Thunderstorm Warnings</span></div>
       <div class="alert-toggle" data-countbar="flood-alert"><span class="toggle-icon">ON</span><span>Flood Alerts</span></div>
+      <div class="alert-toggle" data-countbar="winter-weather"><span class="toggle-icon">ON</span><span>Winter Weather Alerts</span></div>
     </div>
     <!-- State Filters -->
     <div class="menu-group" id="state-group">
@@ -372,7 +373,9 @@
     <div class="alert-count tornado">TORNADO WARNINGS: 0</div>
     <div class="alert-count severe-thunderstorm">SEVERE THUNDERSTORM WARNINGS: 0</div>
     <div class="alert-count flood-alert">FLOOD ALERTS: 0</div>
+    <div class="alert-count winter-weather">WINTER WEATHER ALERTS: 0</div>
   </div>
+  
   <!-- Display Elements for Alert Texts -->
   <div id="event-text" style="text-align: center; width:83%;"></div>
   <div id="area-text"></div>
@@ -719,6 +722,7 @@
       document.querySelector(".tornado").textContent = `TORNADO WARNINGS: ${counts.tornado}`;
       document.querySelector(".severe-thunderstorm").textContent = `SEVERE THUNDERSTORM WARNINGS: ${counts.severeThunderstorm}`;
       document.querySelector(".flood-alert").textContent = `FLOOD ALERTS: ${counts.flood}`;
+      document.querySelector(".winter-weather").textContent = `WINTER WEATHER ALERTS: ${counts.winterWeather}`;
     }
     
     // Determine the background image based on strict priority.
